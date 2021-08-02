@@ -1,0 +1,8 @@
+snippet h5 "h5df read"
+import h5py
+f = h5py.File('${1:filename}')
+
+print("\ngroup is following:\n")
+for key in f.keys():
+	print(f[key])${VISUAL}
+endsnippet

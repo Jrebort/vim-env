@@ -31,6 +31,7 @@ au Filetype python set fileformat=unix
 autocmd Filetype python set foldmethod=indent
 autocmd Filetype python set foldlevel=99
 
+set rtp +=~/.vim
 " Installing plug! Please run :PlugInstall to install.
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'

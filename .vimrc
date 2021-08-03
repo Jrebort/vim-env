@@ -13,6 +13,9 @@ set scrolloff=4
 set showmatch
 set nu
 
+
+
+
 " Some shortcut define
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -80,3 +83,5 @@ let g:ycm_goto_buffer_command = 'vertical-split'
 
 " set ptag
 set tags+=tags
+
+

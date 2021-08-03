@@ -19,10 +19,7 @@ set nu
 " Some shortcut define
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
-" Some setting about python
+nnoremap <C-L> <C-W><C-L> nnoremap <C-H> <C-W><C-H> " Some setting about python
 let python_highlight_all=1
 au Filetype python set tabstop=4
 au Filetype python set softtabstop=4
@@ -40,11 +37,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'Valloric/YouCompleteMe'
 Plug 'preservim/nerdtree'
-Plug 'kien/rainbow_parentheses.vim' 
 Plug 'ervandew/supertab'
-Plug 'rdnetto/YCM-Generator',{'branch':'stable'}
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 " ##########################################
@@ -80,9 +76,12 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " make jump to definition using ycm
 nnoremap <leader>d :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>r :YcmCompleter GoToReferences<CR>
 let g:ycm_goto_buffer_command = 'vertical-split'
 
 " set ptag
 set tags+=tags
 
-
+" color set
+set background=dark
+colorscheme solarized

@@ -52,8 +52,8 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'preservim/nerdtree'
 Plug 'yegappan/taglist'
 Plug 'ervandew/supertab'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
 Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
